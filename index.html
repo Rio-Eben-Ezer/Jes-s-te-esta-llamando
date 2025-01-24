@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>centro de restauracion eben ezer</title>
+  <title>centro de restauracion eben ezer</title> 
   <style>
     /* Fondo de toda la página con una imagen */
     body {
@@ -12,30 +12,35 @@
       background-position: center; /* Centra la imagen */
       background-repeat: no-repeat; /* Evita que la imagen se repita y que se pueda ver */
       margin: 0; /* Elimina márgenes predeterminados del body */
-      height: 100vh; /* */
+      height: 100vh; /* Asegura que el fondo ocupe toda la altura de la pantalla */
+      display: flex;
+      justify-content: center; /* Centra el contenido horizontalmente */
+      align-items: center; /* Centra el contenido verticalmente */
+      font-family: Arial, sans-serif; /* Fuente más limpia */
+    }*/
     }
 
     /* Contenedor principal */
     .contenido {
-      text-align: center; /* Centro */
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); /* Centra el contenedor principal */
+      text-align: center; /* Centra todo el contenido */
+      max-width: 90%; /* Asegura que no ocupe más del 90% de la pantalla */
+      width: 100%; /* Asegura que el contenido se ajuste en pantallas pequeñas */
+    
     }
 
     /* Estilo para el mensaje */
     #mensaje {
-      background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente para el mensaje */
+      background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para el mensaje */
       padding: 20px;
       font-size: 24px;
       border-radius: 10px;
-      width: 50%;
+      width: 100%; /* Asegura que el mensaje no se estire demasiado */
+      box-sizing: border-box; /* Asegura que el padding no afecte el tamaño del ancho */
+      margin-bottom: 20px; /* Espacio debajo del mensaje */
     }
 
     /* Estilo para el enlace de Instagram */
     #instagram {
-      margin-top: 20px; /* Espacio entre el mensaje y el enlace */
       font-size: 18px;
       color: #0077b5; /* Color azul de Instagram */
       text-decoration: none; /* Elimina subrayado */
@@ -44,6 +49,15 @@
     #instagram:hover {
       text-decoration: underline; /* Añade subrayado cuando el usuario pasa el ratón por encima */
     }
+     /* Ajustes para pantallas más pequeñas (móviles) */
+    @media (max-width: 600px) {
+      #mensaje {
+        font-size: 20px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+        padding: 15px; /* Ajusta el padding para móviles */
+      }
+
+      #instagram {
+        font-size: 16px; /* Ajusta el tamaño del enlace */
   </style>
 </head>
 <body>
