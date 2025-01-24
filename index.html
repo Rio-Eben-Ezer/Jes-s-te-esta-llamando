@@ -3,11 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mensaje Aleatorio y Mi Instagram</title>
+  <title>centro de restauración eben-ezer</title>
 </head>
 <body>
+  <style>
+    /* Fondo de toda la página con una imágenes */
+    body {
+      background: url('https://github.com/Rio-Eben-Ezer/Jes-s-te-esta-llamando/blob/main/logo%20eben%20ezer%20logo.png') no-repeat center center fixed, 
+                  
+      background-size: cover;
+      height: 100vh; /* Asegura que el fondo ocupe toda la altura de la pantalla */
+      margin: 0;
+    }
+
+    /* Centrar el mensaje */
+    #mensaje {
+      background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 24px;
+      width: 50%;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Centra el mensaje exactamente */
+    }
+  </style>
+</head>
+
   <h1 id="mensaje"></h1>
-  <a href="https://www.instagram.com/centro_restauracion_eben_ezer?igsh=MWFmcTltZjR0ejBvcA==">Visita mi Instagram</a>
+  <a href="https://www.instagram.com/centro_restauracion_eben_ezer?igsh=MWFmcTltZjR0ejBvcA==">ingresa aquí, a nuestro instragram</a>
 
   <script>
     const mensajes = [
@@ -116,6 +143,7 @@
 
     // Mostrar un mensaje aleatorio
     document.getElementById('mensaje').textContent = mensajes[Math.floor(Math.random() * mensajes.length)];
+    
   </script>
 </body>
 </html>
