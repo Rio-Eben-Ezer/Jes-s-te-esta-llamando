@@ -7,15 +7,26 @@
 </head>
 <body>
   <style>
-    /* Fondo de toda la página con una imágenes */
+    /* Fondo de toda la página con una imagen */
     body {
-      background: url('https://github.com/Rio-Eben-Ezer/Jes-s-te-esta-llamando/blob/main/logo%20eben%20ezer%20logo.png?raw=true') no-repeat center center fixed, 
-                  
-      background-size: cover;
-      height: 100vh; /* Asegura que el fondo ocupe toda la altura de la pantalla */
-      margin: 0;
+      background-imagen: url('https://github.com/Rio-Eben-Ezer/Jes-s-te-esta-llamando/blob/main/logo%20eben%20ezer%20logo.png?raw=true') no-repeat center center fixed, 
+      background-size: cover; /* Hace que la imagen ocupe toda la página */
+      background-position: center; /* Centra la imagen */
+      background-repeat: no-repeat; /* Evita que la imagen se repita */
+      margin: 0; /* Elimina márgenes predeterminados del body */
+      height: 100vh; /* Asegura que el fondo ocupe toda la altura de la pantalla */          
+   
     }
-
+    
+    * Contenedor principal */
+    .contenido {
+      text-align: center; /* Centra todo el contenido */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Centra el contenedor principal */
+      
+    }
     /* Centrar el mensaje */
     #mensaje {
       background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
@@ -29,6 +40,17 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); /* Centra el mensaje exactamente */
+    }
+      /* Estilo para el enlace de Instagram */
+    #instagram {
+      margin-top: 20px; /* Espacio entre el mensaje y el enlace */
+      font-size: 18px;
+      color: #0077b5; /* Color azul de Instagram */
+      text-decoration: none; /* Elimina subrayado */
+    }
+
+    #instagram:hover {
+      text-decoration: underline; /* Añade subrayado cuando el usuario pasa el ratón por encima */
     }
   </style>
 </head>
