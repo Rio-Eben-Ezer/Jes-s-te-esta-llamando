@@ -9,15 +9,16 @@
     body {
       background-image: url('https://github.com/Rio-Eben-Ezer/Jes-s-te-esta-llamando/blob/main/logo%20eben%20ezer%20logo.png?raw=true'); /* Cambia la URL por la de tu imagen */
       background-size: 100%; /* La imagen ocupará el 100% del ancho y altura */
-      background-position: center; /* Centra la imagen */
+      background-position: top center; /* Coloca la imagen en la parte superior */
       background-repeat: no-repeat; /* Evita que la imagen se repita y que se pueda ver */
       margin: 0; /* Elimina márgenes predeterminados del body */
       height: 100vh; /* Asegura que el fondo ocupe toda la altura de la pantalla */
       display: flex;
       justify-content: center; /* Centra el contenido horizontalmente */
-      align-items: center; /* Centra el contenido verticalmente */
-      font-family: Arial, sans-serif; /* Fuente más limpia */
-    }*/
+      align-items: flex-start; /* Alinea el contenido al inicio (arriba) */
+      flex-direction: column; /* Organiza el contenido en columna */
+      font-family: Arial, sans-serif;
+    
     }
 
     /* Contenedor principal */
@@ -25,6 +26,7 @@
       text-align: center; /* Centra todo el contenido */
       max-width: 90%; /* Asegura que no ocupe más del 90% de la pantalla */
       width: 100%; /* Asegura que el contenido se ajuste en pantallas pequeñas */
+      margin-top: 20px; /* Agrega espacio entre la imagen y el mensaje */
     
     }
 
